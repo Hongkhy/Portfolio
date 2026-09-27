@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fcfcfa;
+  --foreground: #171b19;
 }
 
 @theme inline {
@@ -12,15 +12,88 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), sans-serif;
+  background-image:
+    linear-gradient(rgba(48, 67, 63, 0.065) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(48, 67, 63, 0.065) 1px, transparent 1px);
+  background-position: center top;
+  background-size: 32px 32px;
+}
+
+:root.dark {
+  color-scheme: dark;
+  --background: #111815;
+  --foreground: #e5eee9;
+}
+
+:root.dark body {
+  background-image:
+    linear-gradient(rgba(175, 205, 188, 0.075) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(175, 205, 188, 0.075) 1px, transparent 1px);
+}
+
+:root.dark .text-neutral-950,
+:root.dark .text-neutral-900 {
+  color: #e5eee9;
+}
+
+:root.dark .text-neutral-800,
+:root.dark .text-neutral-700,
+:root.dark .text-neutral-600 {
+  color: #b8c5bd;
+}
+
+:root.dark .text-neutral-500,
+:root.dark .text-neutral-400 {
+  color: #91a097;
+}
+
+:root.dark .text-emerald-800 {
+  color: #8bd5a8;
+}
+
+:root.dark .border-neutral-200 {
+  border-color: #34423a;
+}
+
+:root.dark .border-neutral-300 {
+  border-color: #46544b;
+}
+
+:root.dark .bg-white {
+  background-color: #19221d;
+}
+
+:root.dark .bg-white\/80 {
+  background-color: rgb(25 34 29 / 0.88);
+}
+
+:root.dark .bg-neutral-100 {
+  background-color: #202b24;
+}
+
+:root.dark .bg-neutral-950 {
+  background-color: #d8e8de;
+  color: #142019;
+}
+
+:root.dark .bg-neutral-950:hover {
+  background-color: #a8d4b8;
+}
+
+:root.dark .decoration-neutral-400 {
+  text-decoration-color: #82948a;
 }
