@@ -42,7 +42,7 @@ export default function Home() {
 						<Link className="inline-flex items-center gap-3 bg-neutral-950 px-4 py-3 font-semibold text-white transition-colors hover:bg-emerald-800 sm:px-5" href="/projects">
 							Explore projects <span aria-hidden="true">↗</span>
 						</Link>
-						<a className="inline-flex items-center gap-3 border border-neutral-300 bg-white/80 px-4 py-3 font-semibold text-neutral-900 transition-colors hover:border-neutral-950 sm:px-5" href="/cv.pdf" download="Hongkhy-Kong-CV.pdf">
+						<a className="inline-flex items-center gap-3 border border-neutral-300 bg-white/80 px-4 py-3 font-semibold text-neutral-900 transition-colors hover:border-neutral-950 sm:px-5" href="/Hongkhy-Kong-CV.pdf" download="Hongkhy-Kong-CV.pdf">
 							Download CV <span aria-hidden="true">↓</span>
 						</a>
 					</div>
