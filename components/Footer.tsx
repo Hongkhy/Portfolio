@@ -8,7 +8,7 @@ export default function Footer() {
         </li>
         <li>
           <span className="font-medium text-neutral-950">Email: </span>
-          <a className="hover:text-neutral-950" href="mailto:you@example.com">you@example.com</a>
+          <a className="hover:text-neutral-950" href="mailto:hongkhy017549@gmail.com">hongkhy017549@gmail.com</a>
         </li>
         <li>
           <span className="font-medium text-neutral-950">Phone Number: </span>
